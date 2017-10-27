@@ -8,7 +8,7 @@ tskill '112536'  // 可直接杀死112536进程
 netstat -ano //查看所有进程
 netstat -ano|findstr '8085'  // 查看8085端口的占用情况，查询的结果中会 提示此端口对应的 PID（如112536）
 tasklist // 查看所有运行的进程和对应程序名
-tasklist findstr '112536' //查看指定PID(如112536对应的应用程序),查询结果如： node.exe   112536 Console   12   66,004 K
+tasklist findstr '112536' //查看指定PID(如112536对应的应用程序),查询结果如： node.exe  112536 Console 12 66,004 K
 taskkill /f /t /im node.exe // 按im映射名杀死进程， 也可： tskill /f /pid 112536 (按pid杀死进程)
 
 
